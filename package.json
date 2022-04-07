@@ -6,7 +6,7 @@
         "dev": "tstl --watch"
     },
     "devDependencies": {
-        "@aoemods/aoetypes": "file:../aoe-types/packages/aoetypes",
+        "@aoemods/aoetypes": "^0.1.2",
         "typescript-to-lua": "^1.4.2"
     }
 }
