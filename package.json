@@ -1,0 +1,12 @@
+{
+    "name": "aoe4-typescript-template",
+    "scripts": {
+        "build": "tstl",
+        "deploy": "node deploy.js",
+        "dev": "tstl --watch"
+    },
+    "devDependencies": {
+        "@aoemods/aoetypes": "file:../aoe-types/packages/aoetypes",
+        "typescript-to-lua": "^1.4.2"
+    }
+}
