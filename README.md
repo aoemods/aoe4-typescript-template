@@ -6,13 +6,18 @@ Uses type definitions from the [@aoemods/aoetypes](https://github.com/aoemods/ao
 Join the [AoE 4 Modding Discord server](https://discord.gg/h8FX9Uq3vG) if you experience any issues or have questions.
 
 ## Usage
-Clone this repository, then run `npm install` as with any npm project.
+0. (Optional) Create an AOE4 mod with the modding tools 
+1. Clone this repository, then run `npm install` as with any npm project
+2. Copy or rename the `.env.example` file to `.env` file and set its output path to where you want the generated script to be.
+3. (Optional) Create a new win condition in your AOE4 mod
+4. Set your win condition's script path to the generated script path (same path as in `.env`)
+5. Run `npm run dev` which will detect your script changes in `scripts/` and automatically transpile and copy the generated script over
 
-Edit your scripts in the `scripts/` directory. Use the commands below to convert your scripts to Lua and copy them over to your mod.
+Now you can open the project in the Age of Empires 4 editor as you would normally while being able to edit the TypeScript scripts.
 
-- `npm run build`: Generates a single Lua script `scar/main.lua` from your TypeScript files
-- `npm run dev`: Automatically builds your scripts like build whenever your scripts change, but faster because it is incremental
-- `npm run deploy <out-file>`: Copies the Lua file to the project directory and does some required post-processing, `<out-file>` is eg. `C:\Users\username\Documents\projectname\assets\scar\main.scar`
+## Commands
+- `npm run dev`: Automatically transpiles and copies your scripts whenever you change them
+- `npm start`: Transpiles and copies your scripts once
 
 ## If types are broken
 Since TypeScript support is still experimental you will likely experience incorrect types.
