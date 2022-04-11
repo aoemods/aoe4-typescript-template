@@ -7,7 +7,7 @@ Join the [AoE 4 Modding Discord server](https://discord.gg/h8FX9Uq3vG) if you ex
 
 ## Usage
 0. (Optional) Create an AOE4 mod with the modding tools 
-1. Clone this repository, then run `npm install` as with any npm project
+1. Clone this repository, then run `npm install` as with any npm project. Recommended: run `npm install @aoemods/aoetypes@latest` to update the type definitions
 2. Copy or rename the `.env.example` file to `.env` file and set its output path to where you want the generated script to be.
 3. (Optional) Create a new win condition in your AOE4 mod
 4. Set your win condition's script path to the generated script path (same path as in `.env`)
